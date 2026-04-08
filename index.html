@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青岛港国际 深度分析 — 巴菲特神谕分析师</title>
+<meta name="description" content="融合巴菲特投资哲学与现代多维分析框架的青岛港国际（6198.HK）深度分析报告">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════
+   Morandi Palette — Light & Dark Themes
+   ═══════════════════════════════════════ */
+
+:root {
+  /* ── Light Theme (Morandi warm) ── */
+  --bg: #F2EDE8;
+  --bg-alt: #EBE4DD;
+  --surface: #FFFFFF;
+  --surface-hover: #F9F6F3;
+  --border: #D8CFCA;
+  --border-accent: #C4A882;
+  --text: #4A433E;
+  --text-secondary: #7A726B;
+  --text-dim: #A09890;
+  --heading: #3A3330;
+
+  /* Morandi Accents */
+  --morandi-rose: #C9A9A0;
+  --morandi-sage: #A3B0A0;
+  --morandi-sand: #C4A882;
+  --morandi-blue: #9EB0BC;
+  --morandi-mauve: #B0A0B0;
+  --morandi-clay: #BEA898;
+  --morandi-olive: #A0A890;
+  --morandi-stone: #B0AAA0;
+
+  --accent: #8B7355;
+  --accent-light: rgba(139, 115, 85, 0.08);
+  --accent-border: rgba(139, 115, 85, 0.2);
+
+  /* Semantic */
+  --green: #7A9E7E;
+  --green-bg: rgba(122,158,126,0.1);
+  --red: #BF7B6E;
+  --red-bg: rgba(191,123,110,0.1);
+  --yellow: #C4A060;
+  --yellow-bg: rgba(196,160,96,0.1);
+  --blue: #7E9BB0;
+  --blue-bg: rgba(126,155,176,0.1);
+
+  /* Table */
+  --table-header-bg: #EDE7E1;
+  --table-stripe: rgba(0,0,0,0.02);
+  --table-hover: rgba(139,115,85,0.06);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(74,67,62,0.06);
+  --shadow-md: 0 4px 12px rgba(74,67,62,0.08);
+  --shadow-lg: 0 8px 32px rgba(74,67,62,0.1);
+
+  /* Badge */
+  --badge-buy-bg: rgba(122,158,126,0.15);
+  --badge-buy-text: #5A7E5E;
+  --badge-sell-bg: rgba(191,123,110,0.15);
+  --badge-sell-text: #9E5A4E;
+  --badge-hold-bg: rgba(196,160,96,0.15);
+  --badge-hold-text: #8E7030;
+
+  /* Layout */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --content-width: 900px;
+  --sidebar-width: 260px;
+}
+
+[data-theme="dark"] {
+  --bg: #262320;
+  --bg-alt: #2E2A27;
+  --surface: #33302D;
+  --surface-hover: #3B3734;
+  --border: #4A4540;
+  --border-accent: #8B7355;
+  --text: #E0D8D0;
+  --text-secondary: #B0A89E;
+  --text-dim: #807870;
+  --heading: #F0E8E0;
+
+  --accent: #C4A882;
+  --accent-light: rgba(196,168,130,0.1);
+  --accent-border: rgba(196,168,130,0.25);
+
+  --morandi-rose: #C9A9A0;
+  --morandi-sage: #8EA088;
+  --morandi-sand: #C4A882;
+  --morandi-blue: #8AA0B0;
+  --morandi-mauve: #A090A0;
+
+  --green: #8EB892;
+  --green-bg: rgba(142,184,146,0.12);
+  --red: #D08878;
+  --red-bg: rgba(208,136,120,0.12);
+  --yellow: #D4B070;
+  --yellow-bg: rgba(212,176,112,0.12);
+  --blue: #8EAEC0;
+  --blue-bg: rgba(142,174,192,0.12);
+
+  --table-header-bg: #3B3734;
+  --table-stripe: rgba(255,255,255,0.02);
+  --table-hover: rgba(196,168,130,0.08);
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.25);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.3);
+
+  --badge-buy-bg: rgba(142,184,146,0.18);
+  --badge-buy-text: #8EB892;
+  --badge-sell-bg: rgba(208,136,120,0.18);
+  --badge-sell-text: #D08878;
+  --badge-hold-bg: rgba(212,176,112,0.18);
+  --badge-hold-text: #D4B070;
+}
+
+/* ═══════════════════════════════
+   Base Reset & Typography
+   ═══════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.4s ease, color 0.3s ease;
+}
+
+/* ═══════════════════════════════
+   Top Navigation Bar
+   ═══════════════════════════════ */
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background 0.4s, border-color 0.3s;
+}
+
+[data-theme="light"] .topbar { background: rgba(255,255,255,0.9); }
+[data-theme="dark"] .topbar { background: rgba(51,48,45,0.9); }
+
+.topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--heading);
+  text-decoration: none;
+}
+
+.topbar-brand .logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--morandi-sand), var(--morandi-rose));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar-meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-right: 12px;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all 0.25s;
+}
+
+.theme-toggle:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ═══════════════════════════════
+   Layout: Sidebar + Content
+   ═══════════════════════════════ */
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 2rem 4rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: 72px;
+  height: calc(100vh - 88px);
+  overflow-y: auto;
+  padding: 1rem 0;
+}
+
+.sidebar::-webkit-scrollbar { width: 3px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+.sidebar-nav { list-style: none; }
+
+.sidebar-nav li {
+  margin-bottom: 2px;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  border-left: 2px solid transparent;
+  transition: all 0.2s;
+  line-height: 1.5;
+}
+
+.sidebar-nav a:hover {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+.sidebar-nav a.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  background: var(--accent-light);
+  font-weight: 500;
+}
+
+.sidebar-nav .nav-group {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  padding: 16px 12px 6px;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  max-width: var(--content-width);
+}
+
+/* ═══════════════════════════════
+   Hero Section
+   ═══════════════════════════════ */
+
+.hero {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--morandi-sand), var(--morandi-rose), var(--morandi-sage), var(--morandi-blue));
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  background: var(--accent-light);
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  padding: 4px 14px;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--heading);
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat .label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.hero-stat .value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--heading);
+}
+
+.hero-stat .change {
+  font-size: 0.72rem;
+  margin-top: 2px;
+}
+
+.change.up { color: var(--green); }
+.change.down { color: var(--red); }
+
+/* ═══════════════════════════════
+   Verdict Card
+   ═══════════════════════════════ */
+
+.verdict {
+  background: linear-gradient(135deg, var(--surface), var(--bg-alt));
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.verdict::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--morandi-sand);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.verdict-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.verdict p {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.verdict strong {
+  color: var(--heading);
+}
+
+/* ═══════════════════════════════
+   Decision Summary Card
+   ═══════════════════════════════ */
+
+.decision-summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--green);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-md);
+}
+.decision-summary .ds-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+.decision-summary .ds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.decision-summary .ds-item .ds-label {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.decision-summary .ds-item .ds-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading);
+  margin-top: 2px;
+}
+.decision-summary .ds-item .ds-value.green { color: var(--green); }
+.decision-summary .ds-scenarios {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ═══════════════════════════════
+   Module Sections
+   ═══════════════════════════════ */
+
+.module {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s;
+}
+
+.module:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.module-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.module-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.module-num.n1 { background: rgba(201,169,160,0.2); color: var(--morandi-rose); }
+.module-num.n2 { background: rgba(163,176,160,0.2); color: var(--morandi-sage); }
+.module-num.n3 { background: rgba(196,168,130,0.2); color: var(--morandi-sand); }
+.module-num.n4 { background: rgba(158,176,188,0.2); color: var(--morandi-blue); }
+.module-num.n5 { background: rgba(176,160,176,0.2); color: var(--morandi-mauve); }
+.module-num.n6 { background: rgba(190,168,152,0.2); color: var(--morandi-clay); }
+.module-num.n7 { background: rgba(201,169,160,0.2); color: var(--morandi-rose); }
+.module-num.n8 { background: rgba(163,176,160,0.2); color: var(--morandi-sage); }
+.module-num.n9 { background: rgba(196,168,130,0.2); color: var(--morandi-sand); }
+.module-num.n10 { background: rgba(158,176,188,0.2); color: var(--morandi-blue); }
+.module-num.n11 { background: rgba(191,123,110,0.15); color: var(--red); }
+.module-num.n12 { background: rgba(196,168,130,0.2); color: var(--morandi-sand); }
+
+.module h2 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--heading);
+}
+
+.module h3 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--heading);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.module h3:first-of-type {
+  margin-top: 0;
+}
+
+.module p, .module li {
+  font-size: 0.88rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.module ul, .module ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.module li {
+  margin-bottom: 0.3rem;
+}
+
+.module strong {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+/* ═══════════════════════════════
+   Tables
+   ═══════════════════════════════ */
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+thead {
+  background: var(--table-header-bg);
+}
+
+th {
+  padding: 10px 14px;
+  font-weight: 600;
+  color: var(--heading);
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 2px solid var(--border);
+  font-size: 0.78rem;
+}
+
+td {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: top;
+}
+
+tr:nth-child(even) { background: var(--table-stripe); }
+tr:hover { background: var(--table-hover); }
+
+td:first-child { font-weight: 500; color: var(--heading); }
+
+/* Numeric cells */
+.num { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; text-align: right; }
+th.num { text-align: right; }
+
+/* ═══════════════════════════════
+   Special Elements
+   ═══════════════════════════════ */
+
+.callout {
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  border-left: 3px solid;
+}
+
+.callout.info { background: var(--blue-bg); border-color: var(--blue); }
+.callout.success { background: var(--green-bg); border-color: var(--green); }
+.callout.warning { background: var(--yellow-bg); border-color: var(--yellow); }
+.callout.danger { background: var(--red-bg); border-color: var(--red); }
+
+.callout-title {
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 4px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge.buy { background: var(--badge-buy-bg); color: var(--badge-buy-text); }
+.badge.sell { background: var(--badge-sell-bg); color: var(--badge-sell-text); }
+.badge.hold { background: var(--badge-hold-bg); color: var(--badge-hold-text); }
+
+.rating-bar {
+  display: flex;
+  gap: 3px;
+  margin: 0.5rem 0;
+}
+
+.rating-bar .bar {
+  height: 6px;
+  border-radius: 3px;
+  flex: 1;
+  background: var(--border);
+  transition: background 0.3s;
+}
+
+.rating-bar .bar.filled { background: var(--morandi-sand); }
+
+.code-block {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  overflow-x: auto;
+  margin: 1rem 0;
+  color: var(--text);
+}
+
+.highlight-box {
+  background: var(--accent-light);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+
+.highlight-box .hl-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Moat rating */
+.moat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.moat-item:last-child { border-bottom: none; }
+
+.moat-label { flex: 1; font-size: 0.85rem; font-weight: 500; color: var(--heading); }
+
+.moat-rating {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 999px;
+}
+
+.moat-rating.wide { background: var(--green-bg); color: var(--green); }
+.moat-rating.narrow { background: var(--yellow-bg); color: var(--yellow); }
+.moat-rating.none { background: var(--red-bg); color: var(--red); }
+
+/* ═══════════════════════════════
+   Scorecard
+   ═══════════════════════════════ */
+
+.scorecard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  margin: 1rem 0;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-alt);
+  gap: 12px;
+}
+
+.score-row .criteria {
+  flex: 1;
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.score-row .score {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  min-width: 42px;
+  text-align: center;
+}
+
+.score-row .dots {
+  display: flex;
+  gap: 4px;
+}
+
+.score-row .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.score-row .dot.filled { background: var(--morandi-sand); }
+
+/* Grade badge */
+.grade-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.grade-badge.a { background: var(--green-bg); color: var(--green); border: 2px solid var(--green); }
+.grade-badge.b { background: var(--blue-bg); color: var(--blue); border: 2px solid var(--blue); }
+.grade-badge.c { background: var(--yellow-bg); color: var(--yellow); border: 2px solid var(--yellow); }
+
+/* ═══════════════════════════════
+   Decision Box
+   ═══════════════════════════════ */
+
+.decision-box {
+  background: var(--surface);
+  border: 2px solid var(--green);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 1.5rem 0;
+}
+
+.decision-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.decision-rating {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: var(--radius);
+  background: var(--green-bg);
+  color: var(--green);
+}
+
+.decision-price {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.decision-price .current {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.decision-price .target {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+/* ═══════════════════════════════
+   Disclaimer
+   ═══════════════════════════════ */
+
+.disclaimer {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+.disclaimer strong { color: var(--text-secondary); }
+
+/* ═══════════════════════════════
+   Footer
+   ═══════════════════════════════ */
+
+.page-footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.page-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.page-footer a:hover { text-decoration: underline; }
+
+/* ═══════════════════════════════
+   Back to top
+   ═══════════════════════════════ */
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s;
+  z-index: 100;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* ═══════════════════════════════
+   Responsive
+   ═══════════════════════════════ */
+
+@media (max-width: 960px) {
+  .sidebar { display: none; }
+  .layout { padding: 72px 1.25rem 3rem; }
+  .hero, .module { padding: 1.5rem; }
+}
+
+@media (max-width: 600px) {
+  .layout { padding: 64px 1rem 2rem; }
+  .hero { padding: 1.25rem; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .module { padding: 1.25rem; }
+  .topbar-meta { display: none; }
+  th, td { padding: 7px 10px; font-size: 0.75rem; }
+  .decision-summary .ds-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ═══════════════════════════════
+   Print
+   ═══════════════════════════════ */
+@media print {
+  .topbar, .sidebar, .theme-toggle, .back-to-top { display: none !important; }
+  .layout { padding: 0; }
+  .module { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════ Top Bar ════════════ -->
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="#" class="topbar-brand">
+      <div class="logo">B</div>
+      <span>巴菲特神谕分析师</span>
+    </a>
+    <div class="topbar-actions">
+      <span class="topbar-meta">2026-04-08 | HKEX: 6198</span>
+      <button class="theme-toggle" id="themeToggle" title="切换主题" aria-label="Toggle theme">
+        <span id="themeIcon">&#9790;</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════ Main Layout ════════════ -->
+<div class="layout">
+
+  <!-- ──── Sidebar ──── -->
+  <aside class="sidebar">
+    <ul class="sidebar-nav" id="sidebarNav">
+      <li class="nav-group">概览</li>
+      <li><a href="#verdict">巴菲特裁决</a></li>
+      <li><a href="#decision-summary">决策摘要</a></li>
+      <li><a href="#overview">公司概览</a></li>
+      <li class="nav-group">基本面</li>
+      <li><a href="#management">管理层评估</a></li>
+      <li><a href="#business">商业模式</a></li>
+      <li><a href="#moat">经济护城河</a></li>
+      <li><a href="#financials">财务分析</a></li>
+      <li><a href="#earningscall">电话会分析</a></li>
+      <li class="nav-group">估值与市场</li>
+      <li><a href="#valuation">多模型估值</a></li>
+      <li><a href="#competition">竞争分析</a></li>
+      <li><a href="#technical">技术面</a></li>
+      <li class="nav-group">风险与决策</li>
+      <li><a href="#catalysts">增长催化剂</a></li>
+      <li><a href="#risk">风险矩阵</a></li>
+      <li><a href="#scorecard">巴菲特计分卡</a></li>
+    </ul>
+  </aside>
+
+  <!-- ──── Content ──── -->
+  <main class="content">
+
+    <!-- ══ Hero ══ -->
+    <section class="hero" id="hero">
+      <div class="hero-badge">深度分析报告</div>
+      <h1>青岛港国际 Qingdao Port</h1>
+      <p class="hero-subtitle">融合巴菲特投资哲学与现代多维分析框架的机构级深度研究</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="label">股价</div>
+          <div class="value">HK$6.99</div>
+          <div class="change down">52周: $5.80-$8.10</div>
+        </div>
+        <div class="hero-stat">
+          <div class="label">市值</div>
+          <div class="value">HK$454亿</div>
+        </div>
+        <div class="hero-stat">
+          <div class="label">PE (TTM)</div>
+          <div class="value">8.0x</div>
+          <div class="change down">历史均值~10x</div>
+        </div>
+        <div class="hero-stat">
+          <div class="label">股息率</div>
+          <div class="value">5.5%</div>
+          <div class="change up">DPS ~HK$0.39</div>
+        </div>
+        <div class="hero-stat">
+          <div class="label">派息率</div>
+          <div class="value">43%</div>
+        </div>
+        <div class="hero-stat">
+          <div class="label">评级</div>
+          <div class="value" style="color:var(--green)">买入</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Verdict ══ -->
+    <section class="verdict" id="verdict">
+      <div class="verdict-title">巴菲特的裁决</div>
+      <p><strong>青岛港是巴菲特偏爱的"收费桥"型生意的完美缩影——船只进港就要交费，而青岛港恰好是中国北方最大的综合性港口、全球第四大货运港和第五大集装箱港。</strong>这家公司ROE 13%领跑A股港口板块、资产负债率仅25%、有息负债率不到5%——这在重资产行业中近乎奇迹。港股8倍PE、0.9倍PB、5.5%股息率——你在用低于账面价值的价格买入中国贸易的"收费权"。</p>
+    </section>
+
+    <!-- ══ Decision Summary ══ -->
+    <section class="decision-summary" id="decision-summary">
+      <div class="ds-title">决策摘要 Decision Summary</div>
+      <div class="ds-grid">
+        <div class="ds-item">
+          <div class="ds-label">评级</div>
+          <div class="ds-value green"><span class="badge buy">买入</span></div>
+        </div>
+        <div class="ds-item">
+          <div class="ds-label">计分</div>
+          <div class="ds-value">B 27/36</div>
+        </div>
+        <div class="ds-item">
+          <div class="ds-label">加权目标价</div>
+          <div class="ds-value green">HK$8.20 <span style="font-size:0.78rem;font-weight:400">(+17%)</span></div>
+        </div>
+        <div class="ds-item">
+          <div class="ds-label">首仓区间</div>
+          <div class="ds-value">HK$6.50-7.00</div>
+        </div>
+        <div class="ds-item">
+          <div class="ds-label">股息率</div>
+          <div class="ds-value green">5.5%</div>
+        </div>
+        <div class="ds-item">
+          <div class="ds-label">安全边际</div>
+          <div class="ds-value">15-25%</div>
+        </div>
+      </div>
+      <div class="ds-scenarios">12个月情景：乐观 $9.50 (25%) &middot; 基准 $8.20 (50%) &middot; 悲观 $5.80 (25%)</div>
+    </section>
+
+    <!-- ══ Module 1: Overview ══ -->
+    <section class="module" id="overview">
+      <div class="module-header">
+        <div class="module-num n1">01</div>
+        <h2>公司概览与背景</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <tbody>
+            <tr><td>代码 / 交易所</td><td>6198.HK / 601298.SH</td></tr>
+            <tr><td>市值</td><td class="num">HK$454亿</td></tr>
+            <tr><td>行业</td><td>港口运营</td></tr>
+            <tr><td>成立时间</td><td>1892年开埠 / 2014港交所上市</td></tr>
+            <tr><td>控股股东</td><td>山东港口集团（国企）</td></tr>
+            <tr><td>52周价格区间</td><td class="num">HK$5.80 — $8.10</td></tr>
+            <tr><td>总资产</td><td class="num">RMB 666亿</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>发展历程</h3>
+      <ul>
+        <li><strong>1892年</strong> — 青岛开埠建港，百年港口</li>
+        <li><strong>2014年</strong> — 港交所上市（6198.HK）</li>
+        <li><strong>2018年</strong> — A股上市（601298.SH）</li>
+        <li><strong>2019年</strong> — 山东港口集团整合，青岛港成为旗舰</li>
+        <li><strong>2024年</strong> — 货物吞吐量6.94亿吨（全球第4），集装箱3217万TEU（全球第5）</li>
+        <li><strong>2025年</strong> — 货物吞吐量7.22亿吨（+4.1%），集装箱3420万TEU（+6.3%）</li>
+      </ul>
+
+      <h3>股权结构</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>股东类型</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>山东港口集团</td><td>控股股东，国企</td></tr>
+            <tr><td>中远海运系</td><td>战略投资者</td></tr>
+            <tr><td>青岛国投</td><td>地方国资</td></tr>
+            <tr><td>H股公众</td><td>境外投资者</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ══ Module 2: Management ══ -->
+    <section class="module" id="management">
+      <div class="module-header">
+        <div class="module-num n2">02</div>
+        <h2>管理层评估</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>维度</th><th>评估</th><th class="num">评分</th></tr></thead>
+          <tbody>
+            <tr><td>资本配置能力</td><td>负债率连续9年下降至25%同时保持分红</td><td class="num">B+</td></tr>
+            <tr><td>坦诚程度</td><td>国企标准披露水平</td><td class="num">B</td></tr>
+            <tr><td>利益绑定</td><td>国企管理层，缺乏市场化激励</td><td class="num">B-</td></tr>
+            <tr><td>历史记录</td><td>吞吐量持续增长，整合山东港口顺利</td><td class="num">B+</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout success">
+        <div class="callout-title">管理层总评</div>
+        山东港口集团整合是近年最大的战略事件——把省内多个港口纳入统一管理，减少内部竞争，青岛港作为旗舰受益最大。
+      </div>
+    </section>
+
+    <!-- ══ Module 3: Business Model ══ -->
+    <section class="module" id="business">
+      <div class="module-header">
+        <div class="module-num n3">03</div>
+        <h2>商业模式深度解析</h2>
+      </div>
+
+      <div class="highlight-box">
+        <div class="hl-label">巴菲特的"一句话测试"</div>
+        <p><strong>一句话——船来了交钱，货卸了收费。全球第4大港口。</strong></p>
+        <p style="margin-top:0.5rem;color:var(--green);font-size:0.82rem;font-weight:600">&#10003; 通过测试。模式清晰，一句话就能说明白。</p>
+      </div>
+
+      <h3>收入结构（FY2025，RMB亿）</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>业务</th><th class="num">收入</th><th class="num">占比</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td>物流及配套服务</td><td class="num">~75</td><td class="num">~40%</td><td>利润率中等</td></tr>
+            <tr><td>集装箱装卸</td><td class="num">~53</td><td class="num">~28%</td><td>利润率高</td></tr>
+            <tr><td>液体散货</td><td class="num">~38</td><td class="num">~20%</td><td style="color:var(--green)">利润率最高(32%)</td></tr>
+            <tr><td>干散货</td><td class="num">~13</td><td class="num">~7%</td><td></td></tr>
+            <tr><td>港口增值</td><td class="num">~9</td><td class="num">~5%</td><td></td></tr>
+            <tr><td><strong>合计</strong></td><td class="num"><strong>188</strong></td><td class="num"><strong>100%</strong></td><td><strong>毛利率36.7%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>吞吐量表现</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>指标</th><th class="num">数值</th><th class="num">增速</th><th>全球排名</th></tr></thead>
+          <tbody>
+            <tr><td>货物吞吐量</td><td class="num">7.22亿吨</td><td class="num" style="color:var(--green)">+4.1%</td><td>全球第4</td></tr>
+            <tr><td>集装箱</td><td class="num">3420万TEU</td><td class="num" style="color:var(--green)">+6.3%</td><td>全球第5</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout success">
+        <div class="callout-title">核心利润来源</div>
+        液体散货（原油等）是最赚钱的业务——毛利率超32%，且青岛港是中国最大的原油进口港之一。
+      </div>
+    </section>
+
+    <!-- ══ Module 4: Moat ══ -->
+    <section class="module" id="moat">
+      <div class="module-header">
+        <div class="module-num n4">04</div>
+        <h2>经济护城河分析</h2>
+      </div>
+
+      <div class="moat-item">
+        <div class="moat-label">网络效应</div>
+        <span class="moat-rating narrow">窄</span>
+      </div>
+      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">港口有一定聚集效应——航线越多越吸引船公司，但非平台型网络效应。</p>
+
+      <div class="moat-item">
+        <div class="moat-label">转换成本</div>
+        <span class="moat-rating wide">宽</span>
+      </div>
+      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">航运公司一旦建立航线、仓储和物流网络，转移到其他港口的成本极高。</p>
+
+      <div class="moat-item">
+        <div class="moat-label">成本优势</div>
+        <span class="moat-rating wide">宽</span>
+      </div>
+      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">深水港（最深-20米）可接纳全球最大船舶；规模效应显著。</p>
+
+      <div class="moat-item">
+        <div class="moat-label">无形资产</div>
+        <span class="moat-rating wide">宽</span>
+      </div>
+      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">港口经营权是政府特许，不可能有人在青岛再建一个竞争港口。百年港口的航线网络不可复制。</p>
+
+      <div class="moat-item">
+        <div class="moat-label">有效规模</div>
+        <span class="moat-rating wide">宽</span>
+      </div>
+      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">青岛港覆盖的腹地（山东省GDP全国第3，9.8万亿）只能支撑一个大型综合港口。</p>
+
+      <div class="highlight-box" style="margin-top:1rem">
+        <div class="hl-label">护城河总评</div>
+        <p><strong style="color:var(--green);font-size:1rem">宽护城河</strong> — 4宽1窄。趋势稳定偏加宽（山东港口整合减少内部竞争）。</p>
+        <p style="margin-top:0.5rem;font-size:0.85rem"><strong>趋势：</strong>稳定偏加宽。山东港口集团整合有效减少了省内港口的内部竞争，护城河在加宽。</p>
+      </div>
+    </section>
+
+    <!-- ══ Module 5: Financials ══ -->
+    <section class="module" id="financials">
+      <div class="module-header">
+        <div class="module-num n5">05</div>
+        <h2>财务深度分析</h2>
+      </div>
+
+      <h3>年度利润表趋势（RMB亿）</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>指标</th><th class="num">FY2021</th><th class="num">FY2022</th><th class="num">FY2023</th><th class="num">FY2024</th><th class="num">FY2025</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>营收</td><td class="num">167.9</td><td class="num">192.6</td><td class="num">181.7</td><td class="num">189.4</td><td class="num">188.1</td></tr>
+            <tr><td>营收增速</td><td class="num" style="color:var(--green)">+14.4%</td><td class="num" style="color:var(--green)">+14.7%</td><td class="num" style="color:var(--red)">-5.7%</td><td class="num" style="color:var(--green)">+4.2%</td><td class="num" style="color:var(--red)">-0.7%</td></tr>
+            <tr><td>净利润</td><td class="num">39.8</td><td class="num">45.3</td><td class="num">49.2</td><td class="num">52.4</td><td class="num">52.7</td></tr>
+            <tr><td>净利增速</td><td class="num" style="color:var(--green)">+4.4%</td><td class="num" style="color:var(--green)">+13.6%</td><td class="num" style="color:var(--green)">+8.6%</td><td class="num" style="color:var(--green)">+6.3%</td><td class="num">+0.7%</td></tr>
+            <tr><td>毛利率</td><td class="num">34.1%</td><td class="num">33.9%</td><td class="num">35.6%</td><td class="num">35.5%</td><td class="num">36.7%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>资产负债表健康度</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>指标</th><th class="num">数值</th><th>评价</th></tr></thead>
+          <tbody>
+            <tr><td>总资产</td><td class="num">RMB 666亿</td><td>—</td></tr>
+            <tr><td>净资产</td><td class="num">RMB 457亿</td><td>—</td></tr>
+            <tr><td>资产负债率</td><td class="num">25%</td><td style="color:var(--green)">连续9年下降 &#10004;</td></tr>
+            <tr><td>有息负债率</td><td class="num">&lt;5%</td><td style="color:var(--green)">近乎零有息负债 &#10004;</td></tr>
+            <tr><td>ROE</td><td class="num">~13%</td><td style="color:var(--green)">行业第一 &#10004;</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>现金流分析</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>指标</th><th class="num">数值</th><th>评价</th></tr></thead>
+          <tbody>
+            <tr><td>经营现金流</td><td class="num">~RMB 70亿+</td><td style="color:var(--green)">充沛 &#10004;</td></tr>
+            <tr><td>资本开支</td><td class="num">RMB 30-40亿</td><td>港口基建投入</td></tr>
+            <tr><td>自由现金流</td><td class="num">RMB 30-40亿</td><td style="color:var(--green)">可覆盖分红 &#10004;</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>所有者盈余计算</h3>
+      <div class="code-block">净利润                           RMB 52.7亿
++ 折旧与摊销                      ~RMB 20亿
+- 维护性资本开支                   ~RMB 15亿
+─────────────────────────────────────────
+所有者盈余 ≈                       RMB 57.7亿
+
+收益率 = 57.7亿 / 454亿HK市值(≈RMB412亿) = 14.0%</div>
+
+      <h3>杜邦分析（ROE拆解）</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>组成部分</th><th class="num">数值</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>净利率</td><td class="num">28%</td><td>港口行业名列前茅</td></tr>
+            <tr><td>资产周转率</td><td class="num">0.30x</td><td>重资产行业正常</td></tr>
+            <tr><td>财务杠杆</td><td class="num">1.46x</td><td>极低杠杆</td></tr>
+            <tr><td><strong>ROE</strong></td><td class="num"><strong>~12.3%</strong></td><td>纯靠利润驱动，不依赖杠杆</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout success">
+        <div class="callout-title">巴菲特评语</div>
+        28%的净利率在港口行业名列前茅。资产负债率25%——这是一家几乎不借钱的重资产公司。
+      </div>
+    </section>
+
+    <!-- ══ Module 6: Earnings Call ══ -->
+    <section class="module" id="earningscall">
+      <div class="module-header">
+        <div class="module-num n6">06</div>
+        <h2>电话会分析</h2>
+      </div>
+
+      <h3>FY2025业绩电话会核心信息</h3>
+      <ol>
+        <li><strong>吞吐量稳健增长</strong> — 货物+4.1%，集装箱+6.3%，持续跑赢行业</li>
+        <li><strong>毛利率持续改善</strong> — 36.7%（+1.2ppt），成本控制优秀</li>
+        <li><strong>山东港口整合持续推进</strong> — 减少省内港口内部竞争，协同效应释放</li>
+        <li><strong>分红维持43%派息率</strong> — 稳定可靠的股东回报政策</li>
+      </ol>
+    </section>
+
+    <!-- ══ Module 7: Valuation ══ -->
+    <section class="module" id="valuation">
+      <div class="module-header">
+        <div class="module-num n7">07</div>
+        <h2>多模型估值</h2>
+      </div>
+
+      <h3>1. 相对估值（H股）</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>指标</th><th class="num">青岛港(H)</th><th class="num">招商港口</th><th class="num">上港集团</th><th class="num">行业均值</th></tr></thead>
+          <tbody>
+            <tr><td>PE</td><td class="num">8.0x</td><td class="num">~12x</td><td class="num">~15x</td><td class="num">~11x</td></tr>
+            <tr><td>P/B</td><td class="num">0.90x</td><td class="num">~1.2x</td><td class="num">~1.5x</td><td class="num">~1.2x</td></tr>
+            <tr><td>EV/EBITDA</td><td class="num">~5x</td><td class="num">~8x</td><td class="num">~10x</td><td class="num">~8x</td></tr>
+            <tr><td>股息率</td><td class="num" style="color:var(--green)">5.5%</td><td class="num">~4%</td><td class="num">~3%</td><td class="num">~4%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout info">
+        <div class="callout-title">AH溢价</div>
+        A股(RMB9)对H股(HK$7 &#8776; RMB6.4)溢价约57-63%。港股显著更便宜。
+      </div>
+
+      <h3>2. DCF（现金流折现）</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>情景</th><th class="num">内在价值/股</th><th class="num">vs 现价</th></tr></thead>
+          <tbody>
+            <tr><td>悲观</td><td class="num">HK$6.00</td><td class="num" style="color:var(--red)">-14%</td></tr>
+            <tr><td><strong>基准</strong></td><td class="num"><strong>HK$8.20</strong></td><td class="num" style="color:var(--green)"><strong>+17%</strong></td></tr>
+            <tr><td>乐观</td><td class="num">HK$10.50</td><td class="num" style="color:var(--green)">+50%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>3. DDM（股息折现模型）</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>情景</th><th class="num">增长率/折现率</th><th class="num">内在价值</th></tr></thead>
+          <tbody>
+            <tr><td>保守</td><td class="num">2% / 9%</td><td class="num">HK$5.69</td></tr>
+            <tr><td><strong>基准</strong></td><td class="num"><strong>3% / 8%</strong></td><td class="num"><strong>HK$8.03</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>4. SOTP（分部加总）</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>业务板块</th><th>估值方法</th><th class="num">估值(亿RMB)</th></tr></thead>
+          <tbody>
+            <tr><td>集装箱</td><td>12x 盈利</td><td class="num">180</td></tr>
+            <tr><td>液体散货</td><td>10x 盈利</td><td class="num">120</td></tr>
+            <tr><td>物流</td><td>8x 盈利</td><td class="num">80</td></tr>
+            <tr><td>其他</td><td>—</td><td class="num">40</td></tr>
+            <tr><td>净现金</td><td>面值</td><td class="num">50</td></tr>
+            <tr><td><strong>SOTP总计</strong></td><td></td><td class="num"><strong>~470</strong></td></tr>
+            <tr><td>折合港币</td><td></td><td class="num"><strong>~HK$517亿</strong></td></tr>
+            <tr><td>每股价值</td><td></td><td class="num"><strong>~HK$7.96</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="highlight-box">
+        <div class="hl-label">加权合理价值</div>
+        <p style="font-size:1.3rem;font-weight:700;color:var(--heading);font-family:'JetBrains Mono',monospace">HK$7.50 — $9.00 / 股 &nbsp; 中位~HK$8.20</p>
+        <p style="margin-top:0.5rem;font-size:0.85rem">当前价HK$6.99 &#8594; <strong style="color:var(--green)">安全边际约 7-22%</strong></p>
+      </div>
+
+      <div class="callout warning">
+        <div class="callout-title">反向DCF</div>
+        隐含永续增长约1%——市场假设港口生意零增长，忽视了山东GDP 3%+增速和一带一路驱动的贸易增长。
+      </div>
+    </section>
+
+    <!-- ══ Module 8: Competition ══ -->
+    <section class="module" id="competition">
+      <div class="module-header">
+        <div class="module-num n8">08</div>
+        <h2>竞争与行业分析</h2>
+      </div>
+
+      <h3>中国主要港口对比</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>港口</th><th class="num">全球排名</th><th class="num">集装箱(TEU)</th><th>运营商</th></tr></thead>
+          <tbody>
+            <tr><td>上海港</td><td class="num">#1</td><td class="num">49.7M</td><td>上港集团</td></tr>
+            <tr><td>宁波舟山</td><td class="num">#2</td><td class="num">37.5M</td><td>宁波港</td></tr>
+            <tr><td>深圳</td><td class="num">#3</td><td class="num">30.2M</td><td>盐田/招商</td></tr>
+            <tr><td style="color:var(--green)">青岛</td><td class="num" style="color:var(--green)">#4</td><td class="num" style="color:var(--green)">34.2M</td><td style="color:var(--green)">青岛港</td></tr>
+            <tr><td>广州</td><td class="num">#5</td><td class="num">25.0M</td><td>广州港</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>波特五力分析</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>力量</th><th>强度</th><th>分析</th></tr></thead>
+          <tbody>
+            <tr><td>供应商议价力</td><td style="color:var(--yellow)">中</td><td>港口设备供应商选择有限</td></tr>
+            <tr><td>买方议价力</td><td style="color:var(--yellow)">中</td><td>大型船公司有一定议价能力</td></tr>
+            <tr><td>替代品威胁</td><td style="color:var(--green)">低 &#10004;</td><td>无法替代港口进行大宗贸易</td></tr>
+            <tr><td>新进入者威胁</td><td style="color:var(--green)">极低 &#10004;</td><td>不可能新建大型港口，牌照+地理壁垒</td></tr>
+            <tr><td>行业内竞争</td><td style="color:var(--yellow)">中</td><td>与日照/烟台有一定竞争但整合中</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ══ Module 9: Technical ══ -->
+    <section class="module" id="technical">
+      <div class="module-header">
+        <div class="module-num n9">09</div>
+        <h2>技术面分析</h2>
+      </div>
+
+      <div class="callout info">
+        <div class="callout-title">注意</div>
+        巴菲特本人不使用技术分析。本节作为完整性补充，供交易型投资者参考。
+      </div>
+
+      <h3>关键支撑与阻力位</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>类型</th><th class="num">价位</th><th>依据</th></tr></thead>
+          <tbody>
+            <tr><td style="color:var(--green)">强支撑</td><td class="num">$5.80</td><td>52周最低点</td></tr>
+            <tr><td style="color:var(--green)">支撑</td><td class="num">$6.50</td><td>近期交易密集区</td></tr>
+            <tr><td style="color:var(--red)">阻力</td><td class="num">$7.50</td><td>前期平台</td></tr>
+            <tr><td style="color:var(--red)">强阻力</td><td class="num">$8.00-8.10</td><td>52周最高点</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ══ Module 10: Catalysts ══ -->
+    <section class="module" id="catalysts">
+      <div class="module-header">
+        <div class="module-num n10">10</div>
+        <h2>增长催化剂与前景展望</h2>
+      </div>
+
+      <h3>短期催化剂（未来6个月）</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>催化剂</th><th>时间</th><th>影响方向</th></tr></thead>
+          <tbody>
+            <tr><td>2025末期派息</td><td>2026年6-7月</td><td style="color:var(--green)">吸引收息资金</td></tr>
+            <tr><td>中期业绩</td><td>2026年8月</td><td>验证吞吐量增长趋势</td></tr>
+            <tr><td>山东港口整合推进</td><td>持续中</td><td style="color:var(--green)">减少内部竞争</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>长期增长驱动力（3-5年）</h3>
+      <ul>
+        <li><strong>一带一路驱动贸易增长</strong> — 青岛港是一带一路海上枢纽之一</li>
+        <li><strong>山东腹地经济</strong> — 山东GDP全国第3（9.8万亿），持续提供货源支撑</li>
+        <li><strong>港口整合减少竞争</strong> — 山东港口集团统一管理，内部竞争大幅减少</li>
+        <li><strong>自动化智慧港口降本</strong> — 全自动化码头运营效率持续提升，降低单位成本</li>
+      </ul>
+    </section>
+
+    <!-- ══ Module 11: Risk ══ -->
+    <section class="module" id="risk">
+      <div class="module-header">
+        <div class="module-num n11">11</div>
+        <h2>风险矩阵</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>风险类型</th><th class="num">评分(1-5)</th><th>具体风险</th></tr></thead>
+          <tbody>
+            <tr><td>经营风险</td><td class="num">2</td><td>港口运营稳定，吞吐量波动有限</td></tr>
+            <tr><td>财务风险</td><td class="num" style="color:var(--green)">1 &#10004;</td><td>D/A仅25%，有息负债率&lt;5%</td></tr>
+            <tr><td>竞争风险</td><td class="num">2</td><td>与日照/烟台有一定竞争但整合中</td></tr>
+            <tr><td>监管政策风险</td><td class="num" style="color:var(--red)">3</td><td>港口费率受政府管制</td></tr>
+            <tr><td>宏观风险</td><td class="num" style="color:var(--red)">3</td><td>贸易战风险影响吞吐量</td></tr>
+            <tr><td>估值风险</td><td class="num" style="color:var(--green)">1 &#10004;</td><td>PE 8x PB 0.9x，估值已充分压缩</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout danger" style="margin-top:1rem">
+        <div class="callout-title">黑天鹅情景</div>
+        <strong>最坏情况：</strong>全球贸易大幅萎缩20%+ &#8594; 吞吐量下降 &#8594; 利润降30% &#8594; HK$4.50。<strong>但港口是"不死"的资产——贸易恢复后，船还是要来的。</strong>
+      </div>
+    </section>
+
+    <!-- ══ Module 12: Scorecard ══ -->
+    <section class="module" id="scorecard">
+      <div class="module-header">
+        <div class="module-num n12">12</div>
+        <h2>巴菲特计分卡与投资决策</h2>
+      </div>
+
+      <h3>巴菲特计分卡（满分36分）</h3>
+      <div class="scorecard-grid">
+        <div class="score-row"><span class="criteria">业务是否易于理解</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div><span class="score">3/3</span></div>
+        <div class="score-row"><span class="criteria">经营历史是否一致</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div><span class="score">3/3</span></div>
+        <div class="score-row"><span class="criteria">长期前景是否良好</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
+        <div class="score-row"><span class="criteria">管理层坦诚与理性</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
+        <div class="score-row"><span class="criteria">主人翁经营心态</span><div class="dots"><div class="dot filled"></div><div class="dot"></div><div class="dot"></div></div><span class="score">1/3</span></div>
+        <div class="score-row"><span class="criteria">高ROE低负债</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div><span class="score">3/3</span></div>
+        <div class="score-row"><span class="criteria">强劲自由现金流</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
+        <div class="score-row"><span class="criteria">宽广经济护城河</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div><span class="score">3/3</span></div>
+        <div class="score-row"><span class="criteria">保守会计处理</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div><span class="score">3/3</span></div>
+        <div class="score-row"><span class="criteria">存在安全边际</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
+        <div class="score-row"><span class="criteria">定价能力（抗通胀）</span><div class="dots"><div class="dot filled"></div><div class="dot"></div><div class="dot"></div></div><span class="score">1/3</span></div>
+        <div class="score-row"><span class="criteria">低资本再投入需求</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:16px;margin:1.5rem 0;padding:1rem;background:var(--bg-alt);border-radius:var(--radius)">
+        <div class="grade-badge b">B</div>
+        <div>
+          <div style="font-weight:700;color:var(--heading);font-size:1.1rem">总分 27/36 — 优秀公司</div>
+          <div style="font-size:0.82rem;color:var(--text-secondary)">A(30-36) 杰出 &middot; B(24-29) 优秀 &middot; C(18-23) 一般 &middot; D(12-17) 令人担忧</div>
+        </div>
+      </div>
+
+      <!-- ── Investment Decision ── -->
+      <h3>投资决策</h3>
+
+      <div class="decision-box">
+        <div class="decision-header">
+          <div class="decision-rating">买入</div>
+          <div class="decision-price">
+            <div class="current">HK$6.99</div>
+            <div class="target">加权目标价 <strong>HK$8.20</strong> &nbsp; | &nbsp; 资本回报 <strong style="color:var(--green)">+17%</strong> + 股息 <strong style="color:var(--green)">5.5%</strong> = 总回报 <strong style="color:var(--green)">~22.5%</strong></div>
+          </div>
+        </div>
+
+        <h3>12个月目标价</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>情景</th><th class="num">目标价</th><th class="num">概率</th><th>逻辑</th></tr></thead>
+            <tbody>
+              <tr><td>乐观</td><td class="num" style="color:var(--green)">$9.50</td><td class="num">25%</td><td>贸易回暖 + 估值修复至10x PE</td></tr>
+              <tr><td><strong>基准</strong></td><td class="num"><strong>$8.20</strong></td><td class="num"><strong>50%</strong></td><td>业绩平稳 + 股息再投资回报</td></tr>
+              <tr><td>悲观</td><td class="num" style="color:var(--red)">$5.80</td><td class="num">25%</td><td>贸易战升级 + 吞吐量下滑</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>分批建仓策略</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>建仓</th><th class="num">价位</th><th class="num">仓位占比</th></tr></thead>
+            <tbody>
+              <tr><td>首仓</td><td class="num">$6.50 — $7.00</td><td class="num">40%</td></tr>
+              <tr><td>二仓</td><td class="num">$6.00 — $6.50</td><td class="num">35%</td></tr>
+              <tr><td>三仓</td><td class="num">$5.50 — $6.00</td><td class="num">25%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>止盈止损策略</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>操作</th><th class="num">价位</th><th>说明</th></tr></thead>
+            <tbody>
+              <tr><td style="color:var(--green)">止盈1</td><td class="num">$8.00 — $8.50</td><td>减仓1/3，锁定利润</td></tr>
+              <tr><td style="color:var(--green)">止盈2</td><td class="num">$9.00 — $9.50</td><td>再减1/3</td></tr>
+              <tr><td>核心仓位</td><td class="num">长期持有</td><td>核心持有收息，不卖出</td></tr>
+              <tr><td style="color:var(--red)">止损位</td><td class="num">$5.00</td><td>基本面严重恶化时止损</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>仓位管理</h3>
+        <ul>
+          <li><strong>建议仓位：</strong>占投资组合的5-8%</li>
+          <li><strong>建议持有周期：</strong>长期（3年+）</li>
+          <li><strong>适合投资者：</strong>追求稳定股息收入、看好中国贸易前景的价值投资者</li>
+        </ul>
+
+        <h3>关键监控指标</h3>
+        <ol>
+          <li>集装箱吞吐量（月度/季度）</li>
+          <li>货物吞吐量</li>
+          <li>毛利率变化趋势</li>
+          <li>分红政策与派息率</li>
+          <li>中美贸易关系</li>
+          <li>山东GDP增速</li>
+        </ol>
+
+        <h3>事件时间表</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>时间</th><th>事件</th></tr></thead>
+            <tbody>
+              <tr><td>2026年6-7月</td><td>末期派息</td></tr>
+              <tr><td>2026年8月</td><td>中期业绩公布</td></tr>
+              <tr><td>持续关注</td><td>山东港口整合进展</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ══ Disclaimer ══ -->
+    <div class="disclaimer">
+      <strong>免责声明：</strong>本分析仅供教育和研究用途，不构成投资建议。"巴菲特"视角是一个受沃伦·巴菲特公开表述的投资原则启发的分析框架——它并不代表沃伦·巴菲特本人对任何具体公司的观点。所有投资都有风险，请在做出投资决策前咨询合格的财务顾问。
+    </div>
+
+    <!-- ══ Footer ══ -->
+    <footer class="page-footer">
+      <p>Generated by <strong>巴菲特神谕分析师</strong> &middot; <a href="https://github.com/JaceXie" target="_blank" rel="noopener">@JaceXie</a></p>
+      <p style="margin-top:4px">分析日期：2026-04-08 &middot; HKEX: 6198</p>
+    </footer>
+
+  </main>
+</div>
+
+<!-- ══ Back to Top ══ -->
+<button class="back-to-top" id="backToTop" title="回到顶部" aria-label="Back to top">&#8593;</button>
+
+<!-- ═══════════════════════════════
+     Scripts
+     ═══════════════════════════════ -->
+<script>
+(function() {
+  // ── Theme Toggle ──
+  const html = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const icon = document.getElementById('themeIcon');
+
+  const saved = localStorage.getItem('qingdao-port-theme');
+  if (saved) {
+    html.setAttribute('data-theme', saved);
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    html.setAttribute('data-theme', 'dark');
+  }
+
+  function updateIcon() {
+    icon.innerHTML = html.getAttribute('data-theme') === 'dark' ? '&#9788;' : '&#9790;';
+  }
+  updateIcon();
+
+  toggle.addEventListener('click', function() {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('qingdao-port-theme', next);
+    updateIcon();
+  });
+
+  // ── Sidebar Active State ──
+  const sections = document.querySelectorAll('.module, .verdict, .hero, .decision-summary');
+  const navLinks = document.querySelectorAll('.sidebar-nav a');
+
+  function updateActive() {
+    let current = '';
+    sections.forEach(function(section) {
+      const top = section.offsetTop - 100;
+      if (window.scrollY >= top) {
+        current = section.id;
+      }
+    });
+    navLinks.forEach(function(link) {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+
+  // ── Back to Top ──
+  var btn = document.getElementById('backToTop');
+  window.addEventListener('scroll', function() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ── Smooth scroll for sidebar ──
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
